@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel=stylesheet href="css/style.css">
+	<!-- Latest compiled and minified CSS -->
+
+</head>
+<body>
+
+<div class="offOne" style='position:relative;left:200px;top:100px'>
+<div class="square" style="width:200px;height:40px;border-radius:25px;background-color:lightgrey;"><p class="word" style="position:relative;top:10px;left:100px;color:white;font-weight:bold;">OFF</p></div>
+<div class="circle" style="width:50px;height:50px;border-radius:50%;border:1px solid black;position:relative;bottom:45px;background-color:white;">
+<button onclick= "turn()" class="circle2" style="width:25px;height:25px;border-radius:50%;border:1px solid black;position:relative;top:10px;left:10px;background-color:white;box-shadow:10px 0px 50px gray;"></button>
+</div>
+</div>
+
+<!-- <div class="onOne" style='position:relative;left:200px;top:100px'>
+<div class="square " style="width:200px;height:40px;border-radius:25px;background-color:lightgreen;"><p class="word" style="position:relative;top:10px;left:100px;color:white;font-weight:bold;">ON</p></div>
+<div class="circle" style="width:50px;height:50px;border-radius:50%;border:1px solid black;position:relative;bottom:45px;left:150px;background-color:white;">
+<button onclick = "turn()" class="circle2" style="width:25px;height:25px;border-radius:50%;border:1px solid black;position:relative;top:10px;left:10px;background-color:white;box-shadow:10px 0px 50px gray;"></button>
+</div>
+</div> -->
+
+<script>
+var a=false;
+function turn() {
+	
+if (a == true) {
+
+	document.write("<div class='offOne' style='position:relative;left:200px;top:100px'><div class='square' style='width:200px;height:40px;border-radius:25px;background-color:lightgrey;'><p class='word' style='position:relative;top:10px;left:100px;color:white;font-weight:bold;'>OFF</p></div><div class='circle' style='width:50px;height:50px;border-radius:50%;border:1px solid black;position:relative;bottom:45px;background-color:white;'><button onclick ='turn()' class='circle2' style='width:25px;height:25px;border-radius:50%;border:1px solid black;position:relative;top:10px;left:10px;background-color:white;box-shadow:10px 0px 50px gray;'></button></div></div>")
+	a=false;
+	document.close();
+}
+else {
+	document.write("<div class='onOne' style='position:relative;left:200px;top:100px'><div class='square' style='width:200px;height:40px;border-radius:25px;background-color:lightgreen;'><p class='word' style='position:relative;top:10px;left:100px;color:white;font-weight:bold;'>ON</p></div><div class='circle' style='width:50px;height:50px;border-radius:50%;border:1px solid black;position:relative;bottom:45px;left:150px;background-color:white;'><button onclick='turn()' class='circle2' style='width:25px;height:25px;border-radius:50%;border:1px solid black;position:relative;top:10px;left:10px;background-color:white;box-shadow:10px 0px 50px gray;'></button></div></div>")
+	a = true;
+	document.close();
+
+}
+};
+
+
+</script>
+</body>
+</html>

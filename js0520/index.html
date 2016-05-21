@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*.ust{
+  width: 400px;
+  height: 300px;
+  border: 1px solid black;
+  float: left;
+  background-color: red;
+  margin-left: 30px;
+
+}
+.ust1{
+  background-color: red;
+}
+.ust2{
+  background-color: black;
+}
+.ust3{
+  background-color: blue;
+}*/
+
+.main {
+	width:100%;
+}
+
+
+</style>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<body>
+   <!--  <div class="ust ust1" id="red" name="kvadrat">
+
+    </div>
+    <div class="ust ust2" id="black" name="kvadrat">
+
+    </div>
+    <div class="ust ust3" id="blue" name="kvadrat">
+
+    </div> -->
+    <script type="text/javascript">
+    //   var a=document.getElementById("red");
+    // var b=window.innerHeight;
+    // var c=window.innerWidth;
+
+    //  a.innerHTML="Qirmizi kvadrat";
+    //  document.getElementsByName("kvadrat")[2].innerHTML=b;
+    //  document.getElementById("red").innerHTML=c;
+
+
+    
+	
+
+// document.getElementsByClassName("main")[0].style.backgroundColor = "blue";
+// document.getElementsByClassName("myDiv")[0].style.height = "100px";
+// document.getElementsByClassName("myDiv")[0].style.backgroundColor = "green";
+
+function boxCreator (mainWidth, divSay, colSay) {
+var main = document.createElement("div");
+    main.setAttribute("class","box");
+    document.body.appendChild(main);
+main.style.width = mainWidth + "px";
+
+
+for ( i = 0; i < divSay; i++) {
+
+	var little = document.createElement("div");
+	little.setAttribute("class", "myDiv");
+	main.appendChild(little);
+	little.style.width = mainWidth/colSay + "px";
+}
+}
+boxCreator(900,15,4);
+
+    </script>
+  </body>
+
+
+
+
+
+</body>
+</html>

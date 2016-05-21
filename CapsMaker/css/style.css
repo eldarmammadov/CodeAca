@@ -1,0 +1,85 @@
+.main {
+	/*margin: 0;
+	padding: 0;*/
+	/*margin: 0 auto;*/
+	/*border: 1px solid black*/
+}
+* {
+	/*border: 1px solid black;*/
+	/*margin-top:10px;*/
+}
+.pic {
+	height: 400px;
+	width: 800px;
+	/*border: 1px solid black*/;
+	overflow: hidden;
+	background-image:url("http://www.sanjuanphotography.com/Winter_storm_clearing__Campbell_Peak__Telluride__CO_op_800x400.jpg");
+}
+.textonpic{
+	height: 50px;
+    width: 800px;
+	/*border: 1px solid black;*/
+	background-color: red;
+}
+.pictext {
+	padding: 10px;
+	font-size: 18px;
+	color: white;
+}
+.text{
+	height: 60px;
+    width: 800px;
+	border: 1px solid black;
+	margin-top: 20px;	
+}
+.text p{
+	padding: 10px;
+	font-size: 22px;
+	color: black;
+
+}
+.changetext {
+	height: 40px;
+	width: 180px;
+    background-color: red;
+	border: 1px solid black;
+	margin-top: 5px;
+}
+.changetext p{
+	margin-top: 5px;
+	font-size: 16px;
+	color: white;
+	font-weight: bold;
+}
+.pictext{
+	height: 60px;
+    width: 800px;
+	border: 1px solid black;
+	margin-top: 5px;	
+}
+.changepic {
+	height: 40px;
+	width: 180px;
+    background-color: red;
+	border: 1px solid black;
+	margin-top: 5px;
+}
+.effekt01, .effekt02, .effekt03, .effekt04 {
+	height: 40px;
+	width: 21%;
+    background-color: red;
+	border: 1px solid black;
+	display: inline-block;
+    margin-top: 5px;
+}
+.effekt p{
+	font-size: 16px;
+	color: white;
+	font-weight: bold;
+    margin-top: 5px;
+}
+.pictext {
+	padding: 10px;
+	font-size: 22px;
+	color: black;
+}

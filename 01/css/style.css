@@ -1,0 +1,47 @@
+html, body, section, h3{
+	margin: 0;
+	padding: 0;
+}
+
+.menu{
+	width: 100%;	
+	height: 50px;
+	background: black;
+	color: lightgray;
+	position: fixed;
+}
+
+.menu ul{
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+
+.menu ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 0 20px;	
+}
+.menu a{	
+	text-decoration: none;
+	line-height: 50px;
+	text-transform: uppercase;
+	color: white;
+}
+
+.sect{
+	width: 100%;
+	height: 700px;
+}
+
+.sect01{
+	background-color: green;
+}
+
+.sect02{
+	background-color: blue;
+}
+
+.sect03{
+	background-color: red;
+}

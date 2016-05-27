@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style >
+        .main {
+        	/*border: 1px solid black;*/
+        }
+		.ord {
+			height: 200px;
+			width: 200px;
+			background-color: blue;
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+
+<div class="main">
+<div class="ord"></div>
+<div class="ord"></div>
+<div class="ord"></div>
+</div>
+
+<div class="main">
+<div class="ord"></div>
+<div class="ord"></div>
+<div class="ord"></div>
+</div>
+
+<div class="main">
+<div class="ord"></div>
+<div class="ord"></div>
+<div class="ord"></div>
+</div>
+<script src="jQ/jquery-1.12.4.js"></script>
+</body>
+</html>
+
+<script >
+	$(document).ready(function() {
+		$(".main")
+		.css({"border":"1px solid green", "box-shadow":"5px 5px 5px red"})
+		.first().last().css({
+			"background":"red",
+			"height":"300px"
+		})
+		$(".main")
+		.last().last().css({
+			"background":"red",
+			"height":"300px"
+		})
+		
+
+	});
+
+</script>

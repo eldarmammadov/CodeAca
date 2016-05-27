@@ -1,10 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
+<style>
+	.main{
+		width:100%;
+	}
+	.navbar {
+		width: 100%;
+		height: 40px;
+		/*margin: 10px 10px;*/
+		border: 1px solid black;
+        position: fixed;
+        background-color: black;
+	}
+	.link {
+		float: right;
+		margin-right: 10px;
+		text-align: right;
+	}
+	.navbar p {
+        font-color: white;
+        font-size: 16px;
+	}
+	.sect01 {
+		background-color:red;
+        height:600px;
+        width: 100%;
+	}
+    .sect02 {
+		background-color:blue;
+        height:600px;
+        width: 100%;
+	}
+	.sect03 {
+		background-color:green;
+        height:600px;
+        width: 100%;
+	}
+</style>
 </head>
-<body>
 
+<body>
+<!-- <div class="main">
+<div class="navbar">
+<p class="link"><a href="#one">Link01</a><p>
+<p class="link"><a href="#two">Link02</a><p>
+<p class="link"><a href="#three">Link03</a><p>
+</div>
+
+<div class="sect01" id="one"></div>
+<div class="sect02" id="two"></div>
+<div class="sect03" id="three"></div> -->
+	
+</div>
 <script>
 	// var a =3; 
 	// a=2;
@@ -18,16 +66,130 @@
 	// my();
 	// console.log(a);
 
-	var x = " outs i d e ";
+// 	var x = " outs i d e ";
 
-	 var f1 = function () {
-        x = " i n s i d e f1 ";
-        console.log(x);
-};
-f1 ();
-console.log(x);
+// 	 var f1 = function () {
+//         x = " i n s i d e f1 ";
+//         console.log(x);
+// };
+// f1 ();
+// console.log(x);
 
+// b();
+// console.log(a);
+// var a = 'Hello ';
+// function b () {
+// 	 console.log('Called b!') ; 
+// }
+
+// b();
+// console.log(a);
+
+
+// function a () {
+// 	 b() ;
+// 	 var c;
+// }
+// function b () {
+// 	 var d;  
+// }
+
+// a();
+// var d;
+
+// function a () {
+// 	 function b () {
+// 	   	 console.log(x) ;
+// 	   }  
+// 	   var x = "local"
+// 	   b();
+// }
+// var x = "global"
+// a();
+// console.log(x);
+
+// function waitThreeSeconds () {
+// 	 var ms = 1000 + new Date().getTime();
+// 	 while (new Date() < ms) {};
+// 	 console.log('finished function')
+// }
+
+// function clickHandler () {
+// 	 console.log('click event!')  ;
+// }
+
+// document.addEventListener('click', clickHandler);
+// // console.log('finished ');
+// waitThreeSeconds();
+// console.log('finished execution');
+
+// function myf (a,...other) {
+// 	 console.log(a);
+// }
+// myf(1,"bazar","baki" );
+
+// var firstname = 'John';
+
+// (function(name) {
+// 	 var greeting = 'Inside IIFE:Hello'  ;
+// 	 console.log(greeting + ' ' + name);
+
+// 	}(firstname)); //IIFE
+
+
+
+// function sayHiLater () {
+// 	 var greeting = "Hi"  ;
+
+// 	 setTimeout(function() {
+// 	 	console.log(greeting);
+// 	 }, 3000);
+	 	
+// }
+// // sayHiLater();
+
+
+// function callLater () {
+
+// 	 setTimeout(function() {
+// 	   	 console.log("Tutti sono finito!")
+// 	   },2000 );
+
+// 	 console.log("devi lavor bene!!.");
+// }
+// // callLater();
+
+// //apply, call, bind
+// var person = {
+// 	name:"Eldar",
+// 	surname:"Mammadov",
+//     callThem: function () {
+
+//     	var fullname = this.name + " " + this.surname;
+// 	    return fullname;
+// }
+// };
+// function PrintThem (linguaUno,linguoDuo) {
+// 	 console.log( this.callThem() + "  speaks  "+ linguaUno + ' ' + linguoDuo);
+// 	};
+
+// 	// PrintThem.apply(person,["eng","ita"]);
+
+
+// 	//borrowing function;
+// 	var person2 = {
+// 		name:'Poliglot',
+// 		surname:'Lingua Franco'
+// 	}
+// 	// console.log(person.callThem.apply(person2));
+
+// arr1=[1,2,3];
+// arr2=[];
+// for (var i = 0; i < arr1.length; i++) {
+// 	 arr2.push(arr1[i]*2);
+// }
+// console.log(arr2);
 
 </script>
 </body>
-</html>
+</html>	
